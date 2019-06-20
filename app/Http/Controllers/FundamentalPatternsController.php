@@ -27,7 +27,8 @@ class FundamentalPatternsController extends Controller
 
         $item->addProperty('view_count', 100);
 
-        return view('dump', compact('name', 'description', 'item'));
+        $method = __METHOD__;
+        return view('design-patterns.main', compact('name', 'description', 'item', 'method'));
 
 
     }

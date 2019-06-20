@@ -17,3 +17,7 @@ Route::get('/', function () {
 
 
 Route::get('/test', 'FundamentalPatternsController@propertyContainer')->name('test');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
